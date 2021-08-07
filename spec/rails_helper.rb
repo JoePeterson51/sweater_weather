@@ -1,5 +1,7 @@
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 require 'spec_helper'
+require 'simplecov'
+SimpleCov.start
 ENV['RAILS_ENV'] ||= 'test'
 require File.expand_path('../config/environment', __dir__)
 # Prevent database truncation if the environment is production
@@ -56,6 +58,13 @@ RSpec.configure do |config|
   # The different available types are documented in the features, such as in
   # https://relishapp.com/rspec/rspec-rails/docs
   config.infer_spec_type_from_file_location!
+
+  VCR.configure do |c|
+    c.cassette_library_dir = 'spec/cassettes'
+    c.hook_into :webmock
+    c.filter_sensitive_data('<WEATHER_API_KEY>') { ENV['WEATHER_API_KEY']}
+    c.allow_http_connections_when_no_cassette = true
+  end
 
   # Filter lines from Rails gems in backtraces.
   config.filter_rails_from_backtrace!
