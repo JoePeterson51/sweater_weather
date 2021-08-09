@@ -59,4 +59,16 @@ RSpec.describe "Forcast API" do
       expect(forcast[:data][:attributes][:hourly_weather][0][:icon]).to eq("03n")
     end
   end
+
+  it 'returns error if no params given' do
+    get '/api/v1/forcast?'
+
+    expect(response.status).to eq(400)
+  end
+
+  it 'returns error if search yeilds no results' do
+    get '/api/v1/forcast?location=dsklfjhsdlhfajklsdhflakjhwkebflkuasdbfk'
+
+    expect(response.status).to eq(404)
+  end
 end

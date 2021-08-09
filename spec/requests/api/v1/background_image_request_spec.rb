@@ -15,4 +15,16 @@ RSpec.describe 'Unsplash API request' do
       expect(background[:data][:attributes][:credit][:logo]).to eq("https://unsplash.com/blog/content/images/max/2560/1-VnKoValwGK3-d1bZhD6sVA.jpeg")
     end
   end
+
+  it 'returns error if no location sent' do
+    get '/api/v1/backgrounds?'
+
+    expect(response.status).to eq(400)
+  end
+
+  it 'returns error if no photo found' do
+    get '/api/v1/backgrounds?location=alsjkhdfkajlsdhfklajshdfkjlashdfklajsdhfkjasbdfkjbasdklhfgaklsjdhfkasdbjfaksdjf'
+
+    expect(response.status).to eq(404)
+  end
 end
