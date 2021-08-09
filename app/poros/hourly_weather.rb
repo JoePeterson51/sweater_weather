@@ -1,6 +1,6 @@
 class HourlyWeather
   attr_reader :time,
-              :tempurature,
+              :temperature,
               :conditions,
               :icon
 

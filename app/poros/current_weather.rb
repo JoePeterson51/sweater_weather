@@ -2,7 +2,7 @@ class CurrentWeather
   attr_reader :datetime,
               :sunrise,
               :sunset,
-              :tempurature,
+              :temperature,
               :feels_like,
               :humidity,
               :uvi,
@@ -14,7 +14,7 @@ class CurrentWeather
     @datetime = Time.at(data[:dt]).to_s
     @sunrise = Time.at(data[:sunrise]).to_s
     @sunset = Time.at(data[:sunset]).to_s
-    @tempurature = data[:temp]
+    @temperature = data[:temp]
     @feels_like = data[:feels_like]
     @humidity = data[:humidity]
     @uvi = data[:uvi]
