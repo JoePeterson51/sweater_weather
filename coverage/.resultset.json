@@ -227,8 +227,20 @@
           null,
           null
         ]
+      },
+      "/Users/joepeterson/turing/mod_3/projects/sweater_weather/app/poros/brewery.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1628526780
+    "timestamp": 1628527542
   }
 }
