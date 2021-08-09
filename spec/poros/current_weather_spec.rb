@@ -6,6 +6,7 @@ RSpec.describe CurrentWeather do
       forcast = ForcastFacade.forcast({:lat=>39.738453, :lng=>-104.984853})
       current_weather = forcast.current_weather
 
+      expect(current_weather.class).to eq(CurrentWeather)
       expect(current_weather.conditions).to eq("scattered clouds")
       expect(current_weather.datetime).to eq("2021-08-07 00:08:38 -0600")
       expect(current_weather.feels_like).to eq(67.91)

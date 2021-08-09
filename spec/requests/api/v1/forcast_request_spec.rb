@@ -33,7 +33,7 @@ RSpec.describe "Forcast API" do
         expect(day[:conditions]).to be_a(String)
         expect(day[:icon]).to be_a(String)
       end
-      expect(forcast[:data][:attributes][:daily_weather][0][:date]).to eq("2021-08-07 13:00:00 -0600")
+      expect(forcast[:data][:attributes][:daily_weather][0][:date]).to eq("07-08-2021")
       expect(forcast[:data][:attributes][:daily_weather][0][:sunrise]).to eq("2021-08-07 06:04:49 -0600")
       expect(forcast[:data][:attributes][:daily_weather][0][:sunset]).to eq("2021-08-07 20:06:33 -0600")
       expect(forcast[:data][:attributes][:daily_weather][0][:max_temp]).to eq(89.1)

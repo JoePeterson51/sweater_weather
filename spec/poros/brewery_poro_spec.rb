@@ -6,6 +6,7 @@ RSpec.describe 'brewery poro' do
       brewery = BreweryService.get_breweries('39.738453,-104.984853', 1)
       brewery = Brewery.new(brewery[0])
 
+      expect(brewery.class).to eq(Brewery)
       expect(brewery.id).to eq(8245)
       expect(brewery.name).to eq("Aero Craft Brewing")
       expect(brewery.brewery_type).to eq("planning")

@@ -1,5 +1,6 @@
 class BackgroundFacade
-  def self.get_background(search)
-    background = BackgroundService.search_backgrounds(search)
+  def self.background(search)
+    background = BackgroundService.get_background(search)
+    Background.new(background, search)
   end
 end

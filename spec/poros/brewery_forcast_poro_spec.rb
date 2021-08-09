@@ -7,6 +7,7 @@ RSpec.describe 'brewery forcast poro' do
       brewery_data = BreweryService.get_breweries('39.738453,-104.984853', 1)
       brewery_forcast = BreweryForcast.new(forcast_data, brewery_data)
 
+      expect(brewery_forcast.class).to eq(BreweryForcast)
       expect(brewery_forcast.forcast[:summary]).to eq("clear sky")
       expect(brewery_forcast.forcast[:temperature]).to eq(90.75)
       expect(brewery_forcast.breweries[0].id).to eq(8245)

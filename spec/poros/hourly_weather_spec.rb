@@ -6,7 +6,7 @@ RSpec.describe HourlyWeather do
       forcast = ForcastFacade.forcast({:lat=>39.738453, :lng=>-104.984853})
       hourly_weather = forcast.hourly_weather
 
-      expect(hourly_weather).to be_an(Array)
+      expect(hourly_weather[0].class).to eq(HourlyWeather)
       expect(hourly_weather.count).to eq(8)
       expect(hourly_weather[0].conditions).to eq("scattered clouds")
       expect(hourly_weather[0].icon).to eq("03n")
