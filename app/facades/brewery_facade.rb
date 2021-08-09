@@ -6,5 +6,6 @@ class BreweryFacade
     breweries = brewery_data.each do |brewery|
       Brewery.new(brewery)
     end
+    breweries.unshift(forcast)
   end
 end
