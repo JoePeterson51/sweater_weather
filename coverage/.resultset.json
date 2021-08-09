@@ -195,7 +195,7 @@
           null,
           null,
           1,
-          2,
+          1,
           null,
           null,
           null,
@@ -217,59 +217,6 @@
           null
         ]
       },
-      "/Users/joepeterson/turing/mod_3/projects/sweater_weather/app/controllers/api/v1/breweries_controller.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/joepeterson/turing/mod_3/projects/sweater_weather/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/Users/joepeterson/turing/mod_3/projects/sweater_weather/app/facades/geo_code_facade.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/joepeterson/turing/mod_3/projects/sweater_weather/app/services/geo_code_service.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/joepeterson/turing/mod_3/projects/sweater_weather/app/facades/brewery_facade.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          5,
-          null,
-          1,
-          null,
-          null
-        ]
-      },
       "/Users/joepeterson/turing/mod_3/projects/sweater_weather/app/services/brewery_service.rb": {
         "lines": [
           1,
@@ -280,49 +227,8 @@
           null,
           null
         ]
-      },
-      "/Users/joepeterson/turing/mod_3/projects/sweater_weather/app/services/forcast_service.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/joepeterson/turing/mod_3/projects/sweater_weather/app/poros/brewery_forcast.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/joepeterson/turing/mod_3/projects/sweater_weather/app/poros/brewery.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          5,
-          5,
-          5,
-          null,
-          null
-        ]
       }
     },
-    "timestamp": 1628526040
+    "timestamp": 1628526780
   }
 }
