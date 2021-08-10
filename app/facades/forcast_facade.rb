@@ -1,6 +1,6 @@
 class ForcastFacade
-  def self.forcast(location)
-    data = ForcastService.get_forcast(location)
+  def self.forcast(location, units = 'imperial')
+    data = ForcastService.get_forcast(location, units)
     forcast = Forcast.new(data)
   end
 

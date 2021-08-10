@@ -60,15 +60,26 @@ RSpec.describe "Forcast API" do
     end
   end
 
-  it 'returns error if no params given' do
-    get '/api/v1/forcast?'
+  it 'can use metric measurements' do
+    VCR.use_cassette 'Metric Forcast' do
+      get '/api/v1/forcast?location=denver,co&units=metric'
+      forcast = JSON.parse(response.body, symbolize_names: true)
 
-    expect(response.status).to eq(400)
+      expect(forcast[:data][:attributes][:hourly_weather][0][:temperature]).to eq(33.85)
+    end
   end
 
-  it 'returns error if search yeilds no results' do
-    get '/api/v1/forcast?location=dsklfjhsdlhfajklsdhflakjhwkebflkuasdbfk'
+  describe 'sad paths' do
+    it 'returns error if no params given' do
+      get '/api/v1/forcast?'
 
-    expect(response.status).to eq(404)
+      expect(response.status).to eq(400)
+    end
+
+    it 'returns error if search yeilds no results' do
+      get '/api/v1/forcast?location=dsklfjhsdlhfajklsdhflakjhwkebflkuasdbfk'
+
+      expect(response.status).to eq(404)
+    end
   end
 end
