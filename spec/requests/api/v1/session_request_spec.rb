@@ -14,7 +14,7 @@ RSpec.describe 'session request' do
     post '/api/v1/sessions', headers: headers, params: body.to_json
 
     user = JSON.parse(response.body, symbolize_names: true)
-
+require 'pry'; binding.pry
     expect(response).to be_successful
     expect(response.status).to eq(201)
     expect(user[:data][:type]).to eq('users')

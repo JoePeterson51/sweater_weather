@@ -36,6 +36,7 @@ group :development, :test do
   gem 'pry'
   gem 'figaro'
   gem 'capybara'
+  gem 'travis'
 end
 
 group :development do
