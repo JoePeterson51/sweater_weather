@@ -1,0 +1,15 @@
+current directory: /Users/joepeterson/turing/mod_3/projects/sweater_weather/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.7.7/ext/bootsnap
+/Users/joepeterson/.rbenv/versions/2.7.2/bin/ruby -I /Users/joepeterson/.rbenv/versions/2.7.2/lib/ruby/2.7.0 -r ./siteconf20210822-19661-ak8fu2.rb extconf.rb
+creating Makefile
+
+current directory: /Users/joepeterson/turing/mod_3/projects/sweater_weather/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.7.7/ext/bootsnap
+make "DESTDIR=" clean
+
+current directory: /Users/joepeterson/turing/mod_3/projects/sweater_weather/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.7.7/ext/bootsnap
+make "DESTDIR="
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/joepeterson/turing/mod_3/projects/sweater_weather/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.7.7/ext/bootsnap
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20210822-19661-1as1h3r/bootsnap

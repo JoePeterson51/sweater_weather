@@ -1,0 +1,13 @@
+current directory: /Users/joepeterson/turing/mod_3/projects/sweater_weather/vendor/bundle/ruby/2.7.0/gems/json-2.5.1/ext/json
+/Users/joepeterson/.rbenv/versions/2.7.2/bin/ruby -I /Users/joepeterson/.rbenv/versions/2.7.2/lib/ruby/2.7.0 -r ./siteconf20210822-19661-16pszrs.rb extconf.rb
+creating Makefile
+
+current directory: /Users/joepeterson/turing/mod_3/projects/sweater_weather/vendor/bundle/ruby/2.7.0/gems/json-2.5.1/ext/json
+make "DESTDIR=" clean
+
+current directory: /Users/joepeterson/turing/mod_3/projects/sweater_weather/vendor/bundle/ruby/2.7.0/gems/json-2.5.1/ext/json
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+current directory: /Users/joepeterson/turing/mod_3/projects/sweater_weather/vendor/bundle/ruby/2.7.0/gems/json-2.5.1/ext/json
+make "DESTDIR=" install
