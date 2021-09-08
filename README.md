@@ -1,6 +1,6 @@
 # Sweater Weather
 ## About this Project
-Sweater Weather is a fictional backend for an application to plan road trips. This app will allow users to see the current weather as well as the forecasted weather at the destination and also search nearby breweries and what the current weather is for that location.
+Sweater Weather is a backend for an application to help forsee weather when planning road trips or finding a breweries in cities. This app will allow users to see the current weather as well as the forecasted weather at the given destination, and also search nearby breweries and what the current weather is for that location.
 The front-end will communicate with the back-end through an API. The goal of this project is to build and expose that API in a way that satisfies the front-end team’s requirements using service oriented architecture.
 ## Table of Contents
 [**Getting Started**](#getting-started) |
